@@ -50,7 +50,8 @@ void tree_free(node_tree *root, void (*free_data)(void*)) {
     if(root == NULL) return;
     for(int i = 0; i < arr_lenght(root->children); i++) {
         node_tree* node = arr_get(root->children, i);
-        free_data(node->data);
+        if(free_data != NULL)
+            free_data(node->data);
         tree_free(node, free_data);
         free(node);
     }
