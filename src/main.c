@@ -3,6 +3,7 @@
 
 int main(int argc, char const *argv[])
 {
-    /* code */
+    int test = 0;
+    printf("%d", scanf("%d", &test));
     return 0;
 }
