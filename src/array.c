@@ -137,7 +137,7 @@ bool arr_is_empty(array* arr) {
 /// @param len The number of values.
 /// @param type_size the size of the type of the array. Use sizeof
 /// @return A pointer to the created array. Call arr_free() to free the memory.
-array* linkedList_create_from_list(void* arr, int len, size_t type_size) {
+array* arr_create_from_list(void* arr, int len, size_t type_size) {
     array* temp = arr_init(type_size);
     if(temp == NULL) return NULL;
     for(int i=1; i<len; i++) {

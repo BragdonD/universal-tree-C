@@ -12,7 +12,7 @@ typedef struct array {
 /// Allocation functions
 
 array* arr_init(size_t data_size);
-array* linkedList_create_from_list(void* arr, int len, size_t type_size);
+array* arr_create_from_list(void* arr, int len, size_t type_size);
 void arr_free(array *arr);
 
 /// Accessor functions
